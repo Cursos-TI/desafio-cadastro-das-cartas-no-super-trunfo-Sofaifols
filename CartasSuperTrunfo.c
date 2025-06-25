@@ -19,6 +19,15 @@ int main() {
     float area1;
     float pib1;
 
+    //VARIAVEIS DA CARTA 2
+    char estado2; // de A a H
+    char codigo2[20]; //aqui pode ser qualquer codigo 
+    char cidade2[50]; 
+    int populacao2;
+    int pontosturisticos2;
+    float area2;
+    float pib2;
+
 
 
 
