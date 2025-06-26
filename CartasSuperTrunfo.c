@@ -135,6 +135,6 @@ printf("\n -=- CARTA 2 -=-\n");
     
   printf("\n=========FIM=========\n");
  printf("\n \n");
- 
+
     return 0;
 }
