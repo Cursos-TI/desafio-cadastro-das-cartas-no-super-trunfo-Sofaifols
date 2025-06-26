@@ -42,10 +42,10 @@ int main() {
     //CADASTRAMENTO - para o usuario inserir as infos da carta 1
 printf("\n º CADASTRO DA CARTA 1 º\n");
 
-printf(" - INFORME UMA LETRA PARA REPRESENTAR O ESTADO(DE A a H):\n");
+printf(" - INFORME UMA LETRA PARA REPRESENTAR O ESTADO (DE A a H):\n");
 scanf(" %c", &estado1);
 
-printf("- INFORME O CÓDIGO DA CARTA (EX.: A01, 102, B01...)\n:");
+printf("- INFORME O CÓDIGO DA CARTA (EX.: A01, 102, B01...):\n");
 scanf("%s", codigo1);
 
 printf("- INFORME O NOME DA CIDADE (SEM ESPAÇOS): \n");
@@ -57,11 +57,36 @@ scanf("%d", &populacao1);
 printf("- INFORME A ÁREA DA CIDADE (EM KM², SEM PONTOS OU VÍRGULAS):\n");
 scanf("%f", &area1);
 
-printf(" - INFORME O PIB (SEM PONTOS OU VIRGULAS):\n ");
+printf(" - INFORME O PIB (SEM PONTOS OU VÍRGULAS):\n ");
 scanf("%f", &pib1);
 
 printf("- INFORME A QUANTIDADE DE PONTOS TURÍSTICOS:\n");
-scanf("%d", pontosturisticos1);
+scanf("%d", &pontosturisticos1);
+
+//CADASTRAMENTO PARA O USUÁRIO INSERIR OS DADOS DA CARTA 2
+
+printf("\n º CADASTRO DA CARTA 2 º\n");
+
+printf(" - INFORME UMA LETRA PARA REPRESENTAR O ESTADO (DE A a H):\n");
+scanf(" %c", &estado2);
+
+printf("- INFORME O CÓDIGO DA CARTA (EX.: A01, 102, B01...):\n");
+scanf("%s", codigo2);
+
+printf(" - INFORME O NOME DA CIDADE (SEM ESPAÇOS):\n");
+scanf("%s", &cidade2);
+
+printf("- INFORME O NÚMERO DA POPULAÇÃO:\n");
+scanf("%d", &populacao2);
+
+printf("- INFORME A ÁREA DA CIDADE (EM KM², SEM PONTOS OU VÍRGULAS):\n");
+scanf("%f", &area2);
+
+printf(" - INFORME O PIB (SEM PONTOS OU VÍRGULAS):\n ");
+scanf("%f", &pib2);
+
+printf("- INFORME A QUANTIDADE DE PONTOS TURÍSTICOS:\n");
+scanf("%d", &pontosturisticos2);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
