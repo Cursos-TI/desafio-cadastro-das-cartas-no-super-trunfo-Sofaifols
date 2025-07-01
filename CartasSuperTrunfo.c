@@ -113,15 +113,15 @@ printf("\n ----- EXIBIÇÃO DOS DADOS CADASTRADOS PARA AS CARTAS -----\n");
 
     printf("--> População: %d \n", populacao1);
 
-    printf("--> Área: %.3f km²\n", area1);
+    printf("--> Área: %f km²\n", area1);
 
-    printf("--> PIB: %.2f bilhões de reais\n", pib1);
+    printf("--> PIB: %f bilhões de reais\n", pib1);
 
     printf("--> Quantidade de pontos turísticos: %d\n", pontosturisticos1);
 
-    printf("--> A densidade demográfica dessa cidade é:  %.2f habitantes por km² ", densidadepopulacional1);
+    printf("--> A densidade demográfica dessa cidade é:  %f habitantes por km² \n", densidadepopulacional1);
 
-    printf("--> PIB PER CAPITA da cidade é:  %.3f R$ \n",pibpercapita1);
+    printf("--> PIB PER CAPITA da cidade é:  %f R$ \n",pibpercapita1);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -140,16 +140,20 @@ printf("\n -=- CARTA 2 -=-\n");
 
     printf("--> População: %d \n", populacao2);
 
-    printf("--> Área: %.3f km²\n", area2); //delimitei o tanto de casas com .2
+    printf("--> Área: %f km²\n", area2); //delimitei o tanto de casas com .2
 
-    printf("--> PIB: %.2f milhões de reais\n", pib2); //delimitei o tanto de casas com o .2
+    printf("--> PIB: %f bilhões de reais\n", pib2); //delimitei o tanto de casas com o .2
 
     printf("--> Quantidade de pontos turísticos: %d \n", pontosturisticos2);
 
-    printf("--> A densidade demográfica desse estado é:  %.2f habitantes por km² ", densidadepopulacional2);
+    printf("--> A densidade demográfica desse estado é:  %f habitantes por km² \n", densidadepopulacional2);
     
-    printf("--> PIB PER CAPITA da cidade é:  %.3f R$ \n",pibpercapita2);
+    printf("--> PIB PER CAPITA da cidade é:  %fR$ \n",pibpercapita2);
 
+
+    //estou tendo problemas com as casas decimais dos valores grandes: como área, população e o pib
+    // acredito que existam funções e comandos para "regular" esse pontos e vírgulas, mas ainda 
+    // não foi passado na sala.
   printf("\n=========FIM=========\n");
  printf("\n \n");
 
