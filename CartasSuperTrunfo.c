@@ -119,7 +119,9 @@ printf("\n ----- EXIBIÇÃO DOS DADOS CADASTRADOS PARA AS CARTAS -----\n");
 
     printf("--> Quantidade de pontos turísticos: %d\n", pontosturisticos1);
 
-    printf("--> A densidade demográfica desse estado é:  %.2f habitantes por km²\n ", densidadepopulacional1);
+    printf("--> A densidade demográfica dessa cidade é:  %.2f habitantes por km²\n ", densidadepopulacional1);
+
+    printf("--> PIB PER CAPITA da cidade é:  %f R$",pibpercapita1);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -146,6 +148,8 @@ printf("\n -=- CARTA 2 -=-\n");
 
     printf("--> A densidade demográfica desse estado é:  %.2f habitantes por km²\n ", densidadepopulacional2);
     
+    printf("--> PIB PER CAPITA da cidade é:  %f \n",pibpercapita2);
+
   printf("\n=========FIM=========\n");
  printf("\n \n");
 
