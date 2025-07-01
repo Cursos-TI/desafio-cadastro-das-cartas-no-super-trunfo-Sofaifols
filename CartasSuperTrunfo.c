@@ -19,6 +19,9 @@ int main() {
     int pontosturisticos1;
     float area1;
     float pib1;
+    float densidadepopulacional1;
+    float pibpercapita1;
+    
 
     //VARIÁVEIS - CARTA 2
     char estado2; // de A a H
@@ -28,6 +31,8 @@ int main() {
     int pontosturisticos2;
     float area2;
     float pib2;
+    float densidadepopulacional2;
+    float pibpercapita2;
 
 
       // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -88,6 +93,11 @@ scanf("%f", &pib2);
 printf("- INFORME A QUANTIDADE DE PONTOS TURÍSTICOS:\n");
 scanf("%d", &pontosturisticos2);
 
+densidadepopulacional1 = populacao1 / area1;
+densidadepopulacional2 = populacao2 / area2;
+
+pibpercapita1 = pib1 / populacao1;
+pibpercapita2 = pib2 / populacao2;
 
 printf("\n ----- EXIBIÇÃO DOS DADOS CADASTRADOS PARA AS CARTAS -----\n");
 
@@ -103,12 +113,13 @@ printf("\n ----- EXIBIÇÃO DOS DADOS CADASTRADOS PARA AS CARTAS -----\n");
 
     printf("--> População: %d \n", populacao1);
 
-    printf("--> Área: %.2f km²\n", area1);
+    printf("--> Área: %f km²\n", area1);
 
     printf("--> PIB: %.2f bilhões de reais\n", pib1);
 
     printf("--> Quantidade de pontos turísticos: %d\n", pontosturisticos1);
 
+    printf("--> A densidade demográfica desse estado é:  %.2f habitantes por km²\n ", densidadepopulacional1);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -127,11 +138,13 @@ printf("\n -=- CARTA 2 -=-\n");
 
     printf("--> População: %d \n", populacao2);
 
-    printf("--> Área: %.2f km²\n", area2); //delimitei o tanto de casas com .2
+    printf("--> Área: %.3f km²\n", area2); //delimitei o tanto de casas com .2
 
     printf("--> PIB: %.2f milhões de reais\n", pib2); //delimitei o tanto de casas com o .2
 
     printf("--> Quantidade de pontos turísticos: %d \n", pontosturisticos2);
+
+    printf("--> A densidade demográfica desse estado é:  %.2f habitantes por km²\n ", densidadepopulacional2);
     
   printf("\n=========FIM=========\n");
  printf("\n \n");
