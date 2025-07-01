@@ -47,7 +47,7 @@ int main() {
     //CADASTRAMENTO - para o usuario inserir as infos da carta 1
 printf("\n º CADASTRO DA CARTA 1 º\n");
 
-printf(" - INFORME UMA LETRA PARA REPRESENTAR O ESTADO (DE A a H):\n");
+printf(" \n- INFORME UMA LETRA PARA REPRESENTAR O ESTADO (DE A a H):\n");
 scanf(" %c", &estado1);
 
 printf("- INFORME O CÓDIGO DA CARTA (EX.: A01, 102, B01...):\n");
@@ -72,7 +72,7 @@ scanf("%d", &pontosturisticos1);
 
 printf("\n º CADASTRO DA CARTA 2 º\n");
 
-printf(" - INFORME UMA LETRA PARA REPRESENTAR O ESTADO (DE A a H):\n");
+printf("\n - INFORME UMA LETRA PARA REPRESENTAR O ESTADO (DE A a H):\n");
 scanf(" %c", &estado2);
 
 printf("- INFORME O CÓDIGO DA CARTA (EX.: A01, 102, B01...):\n");
@@ -113,15 +113,15 @@ printf("\n ----- EXIBIÇÃO DOS DADOS CADASTRADOS PARA AS CARTAS -----\n");
 
     printf("--> População: %d \n", populacao1);
 
-    printf("--> Área: %f km²\n", area1);
+    printf("--> Área: %.3f km²\n", area1);
 
     printf("--> PIB: %.2f bilhões de reais\n", pib1);
 
     printf("--> Quantidade de pontos turísticos: %d\n", pontosturisticos1);
 
-    printf("--> A densidade demográfica dessa cidade é:  %.2f habitantes por km²\n ", densidadepopulacional1);
+    printf("--> A densidade demográfica dessa cidade é:  %.2f habitantes por km² ", densidadepopulacional1);
 
-    printf("--> PIB PER CAPITA da cidade é:  %f R$",pibpercapita1);
+    printf("--> PIB PER CAPITA da cidade é:  %.3f R$ \n",pibpercapita1);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -146,9 +146,9 @@ printf("\n -=- CARTA 2 -=-\n");
 
     printf("--> Quantidade de pontos turísticos: %d \n", pontosturisticos2);
 
-    printf("--> A densidade demográfica desse estado é:  %.2f habitantes por km²\n ", densidadepopulacional2);
+    printf("--> A densidade demográfica desse estado é:  %.2f habitantes por km² ", densidadepopulacional2);
     
-    printf("--> PIB PER CAPITA da cidade é:  %f \n",pibpercapita2);
+    printf("--> PIB PER CAPITA da cidade é:  %.3f R$ \n",pibpercapita2);
 
   printf("\n=========FIM=========\n");
  printf("\n \n");
