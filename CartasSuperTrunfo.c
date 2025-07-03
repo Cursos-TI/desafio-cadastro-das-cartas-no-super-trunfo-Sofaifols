@@ -59,7 +59,7 @@ printf("- INFORME O NOME DA CIDADE (SEM ESPAÇOS): \n");
 scanf("%s", cidade1);
 
 printf("- INFORME O NÚMERO DA POPULAÇÃO(SEM PONTOS OU VÍRGULAS):\n");
-scanf("%d", &populacao1);
+scanf("%lu", &populacao1);
 
 printf("- INFORME A ÁREA DA CIDADE (EM KM², SEM PONTOS OU VÍRGULAS):\n");
 scanf("%f", &area1);
@@ -160,6 +160,19 @@ printf("\n -=- CARTA 2 -=-\n");
     printf("--> A densidade demográfica desse estado é:  %f habitantes por km² \n", densidadepopulacional2);
     
     printf("--> PIB PER CAPITA da cidade é:  %fR$ \n",pibpercapita2);
+
+
+
+      printf("\n ============== COMPARAÇÃO DE CARTAS ==============\n");
+      printf("\n -LEMBRETE: O = FALSO     1 = VERDADEIRO.\n");
+      printf("População: A carta 1 venceu? [%d] \n", populacao1 > populacao2);
+      printf("Área: A carta 1 venceu? [%d]\n",area1>area2);
+      printf("PIB: A carta 1 venceu? [%d]\n", pib1>pib2);
+      printf("Pontos turísticos: A carta 1 venceu? [%d]\n", pontosturisticos1>pontosturisticos2);
+      printf("Densidade demográfica: A carta 1 venceu? [%d]\n", densidadepopulacional1<densidadepopulacional2);
+      printf("PIB per capita: A carta 1 venceu? [%d]\n", pibpercapita1>pibpercapita2);
+      printf("SUPER PODER: Carta 1 venceu? [%d] \n", superpoder1>superpoder2);
+
 
 
     //estou tendo problemas com as casas decimais dos valores grandes: como área, população e o pib
