@@ -15,24 +15,26 @@ int main() {
     char estado1; //de A a H
     char codigo1[20]; // aqui pode ser qualquer codigo para carta, mas sugeri na pergunta de cadastramento 
     char cidade1[50]; //pode usar ate 49 caracteres pq termina sempre com \0, um espaço reservado
-    int populacao1;
+    unsigned long int populacao1;
     int pontosturisticos1;
     float area1;
     float pib1;
     float densidadepopulacional1;
     float pibpercapita1;
+    float superpoder1;
     
 
     //VARIÁVEIS - CARTA 2
     char estado2; // de A a H
     char codigo2[20]; //aqui pode ser qualquer codigo 
     char cidade2[50]; //TIVE que definir o tanto de caracteres aqui
-    int populacao2;
+    unsigned long int populacao2;
     int pontosturisticos2;
     float area2;
     float pib2;
     float densidadepopulacional2;
     float pibpercapita2;
+    float superpoder2;
 
 
       // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -93,11 +95,20 @@ scanf("%f", &pib2);
 printf("- INFORME A QUANTIDADE DE PONTOS TURÍSTICOS:\n");
 scanf("%d", &pontosturisticos2);
 
-densidadepopulacional1 = populacao1 / area1;
-densidadepopulacional2 = populacao2 / area2;
+densidadepopulacional1 = (float) populacao1 / area1;
+densidadepopulacional2 = (float) populacao2 / area2;
+//usei o castingggggggggg
+pibpercapita1 = (float) pib1 / populacao1;
+pibpercapita2 = (float) pib2 / populacao2;
 
-pibpercapita1 = pib1 / populacao1;
-pibpercapita2 = pib2 / populacao2;
+
+// adicionar a soma para depois calcular
+superpoder1 = (float)populacao1 + area1 + pib1 + pontosturisticos1 + pibpercapita1 +(1/ densidadepopulacional1); // 1/densidade por conta que
+// é o inverso da densidade que vai tá comparando
+superpoder2 = (float)populacao2 + area2 + pib2 + pontosturisticos2 + pibpercapita2 + (1/ densidadepopulacional2);
+
+
+
 
 printf("\n ----- EXIBIÇÃO DOS DADOS CADASTRADOS PARA AS CARTAS -----\n");
 
