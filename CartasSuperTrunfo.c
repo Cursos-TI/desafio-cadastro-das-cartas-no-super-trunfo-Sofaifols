@@ -59,7 +59,7 @@ printf("- INFORME O NOME DA CIDADE (SEM ESPAÇOS): \n");
 scanf("%s", cidade1);
 
 printf("- INFORME O NÚMERO DA POPULAÇÃO(SEM PONTOS OU VÍRGULAS):\n");
-scanf("%lu", &populacao1);
+scanf("%dlu", &populacao1);
 
 printf("- INFORME A ÁREA DA CIDADE (EM KM², SEM PONTOS OU VÍRGULAS):\n");
 scanf("%f", &area1);
@@ -84,7 +84,7 @@ printf(" - INFORME O NOME DA CIDADE (SEM ESPAÇOS):\n");
 scanf("%s", cidade2);
 
 printf("- INFORME O NÚMERO DA POPULAÇÃO:\n");
-scanf("%d", &populacao2);
+scanf("%lu", &populacao2);
 
 printf("- INFORME A ÁREA DA CIDADE (EM KM², SEM PONTOS OU VÍRGULAS):\n");
 scanf("%f", &area2);
