@@ -163,7 +163,7 @@ printf("\n -=- CARTA 2 -=-\n");
 
 
 
-      printf("\n ============== COMPARAÇÃO DE CARTAS ==============\n");
+      /*printf("\n ============== COMPARAÇÃO DE CARTAS ==============\n");
       printf("\n -LEMBRETE: O = FALSO     1 = VERDADEIRO.\n");
       printf("População: A carta 1 venceu? [%d] \n", populacao1 > populacao2);
       printf("Área: A carta 1 venceu? [%d]\n",area1>area2);
@@ -172,7 +172,7 @@ printf("\n -=- CARTA 2 -=-\n");
       printf("Densidade demográfica: A carta 1 venceu? [%d]\n", densidadepopulacional1<densidadepopulacional2);
       printf("PIB per capita: A carta 1 venceu? [%d]\n", pibpercapita1>pibpercapita2);
       printf("SUPER PODER: Carta 1 venceu? [%d] \n", superpoder1>superpoder2);
-
+      */
 
 
     //estou tendo problemas com as casas decimais dos valores grandes: como área, população e o pib
