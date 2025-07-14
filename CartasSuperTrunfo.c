@@ -122,7 +122,7 @@ printf("\n ----- EXIBIÇÃO DOS DADOS CADASTRADOS PARA AS CARTAS -----\n");
 
     printf("--> Nome da Cidade: %s\n", cidade1); //aqui a mesma coisa, o especificador está apresentando erro
 
-    printf("--> População: %d \n", populacao1);
+    printf("--> População: %lu \n", populacao1);
 
     printf("--> Área: %f km²\n", area1);
 
@@ -149,7 +149,7 @@ printf("\n -=- CARTA 2 -=-\n");
 
     printf("--> Nome da cidade: %s \n", cidade2);
 
-    printf("--> População: %d \n", populacao2);
+    printf("--> População: %lu \n", populacao2);
 
     printf("--> Área: %f km²\n", area2); //delimitei o tanto de casas com .2
 
@@ -165,34 +165,53 @@ printf("\n -=- CARTA 2 -=-\n");
 
     //COMPARAÇÃO DAS CARTAS USANDO IF ELSE, VOU TESTAR TAMBÉM FAZER UM SISTEMA DE PONTOS? TALVEZ COM INCREMENTOS, PRA DECIDIR QUAL CARTA GANHA NO FINAL.
     // os atributos que vou comparar vão ser: população, área e pontos turísticos!
-
+      int pontos1 = 0, pontos2 = 0;
 
       printf("\n------------ COMPARAÇÃO DAS CARTAS -----------\n");
       printf("\n OS ATRIBUTOS A SEREM COMPARADOS: POPULAÇÃO, ÁREA E PONTOS TURÍSTICOS. \n");
 
-
+//usei os incrementos, funcionou!
+//usei sistema de pontos, como pensado anteriormente mesmo, comparei 3 atributos.
       printf("POPULAÇÃO:  ");
     
     if (populacao1 > populacao2) {
-      printf("Carta 1 venceu!\n");
+      printf("(%lu), Carta 1 ganhou!  \n", populacao1);
+      pontos1++;
     } else {
-      printf("Carta 2 venceu!\n");
+      printf("(%lu), Carta 2 ganhou!  \n", populacao2);
+      pontos2++;
     }
      printf("ÁREA:  ");
 
     if (area1 > area2) {
-      printf("Carta 1 venceu!\n"); 
+      printf("(%f), Carta 1 ganhou!\n", area1); 
+      pontos1++;
     } else {
-      printf("Carta 2 venceu!\n");
+      printf("(%f), Carta 2 ganhou!\n", area2);
+      pontos2++;
     }
      printf("PONTOS TURÍSTICOS:  ");
 
     if (pontosturisticos1 > pontosturisticos2) {
-      printf("Carta 1 venceu!\n");
+      printf("(%d), Carta 1 ganhou!\n", pontosturisticos1);
+      pontos1++;
     } else {
-      printf("Carta 2 venceu!\n");
+      printf("(%d), Carta 2 ganhou!\n", pontosturisticos2);
+      pontos2++;
     }
 
+    // fiz uma pontuação e exibi quem acumulou mais pontos      
+      printf("\n--PONTUAÇÃO FINAL--\n");
+      printf(" \nCarta 1- (%s): acumulou %d pontos! \n", cidade1, pontos1);
+      printf(" \nCarta 2- (%s): acumulou %d pontos! \n", cidade2, pontos2);
+//comparação da carta vencedora, usei tbem uma 
+      if (pontos1 > pontos2) {
+        printf("\n====CARTA VENCEDORA====\n");
+        printf(" \nCarta 1: %s, de código(%s), população de %lu habitantes, área de %f km² e com %d pontos turísticos! \n", cidade1, codigo1, populacao1, area1, pontosturisticos1);
+      } else {
+        printf("\n====CARTA VENCEDORA====\n");
+        printf(" \nCarta 2: %s, de código (%s), população de %lu habitantes, área de %f km² e com %d pontos turísticos !\n ", cidade2, codigo2, populacao2, area2, pontosturisticos2);
+      }
 
       /*printf("\n ============== COMPARAÇÃO DE CARTAS ==============\n");
       printf("\n -LEMBRETE: O = FALSO     1 = VERDADEIRO.\n");
@@ -209,7 +228,7 @@ printf("\n -=- CARTA 2 -=-\n");
     //estou tendo problemas com as casas decimais dos valores grandes: como área, população e o pib
     // acredito que existam funções e comandos para "regular" esse pontos e vírgulas, mas ainda 
     // não foi passado na sala.
-  printf("\n=========FIM=========\n");
+  printf("\n=======FIM=======\n");
  printf("\n \n");
 
     return 0;
