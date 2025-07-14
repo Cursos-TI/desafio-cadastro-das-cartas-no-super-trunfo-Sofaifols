@@ -37,8 +37,7 @@ int main() {
     float superpoder2;
 
 
-      // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    //estou pensando em economizar espaço no codigo, colocando cariaveis do mesmo tipo juntas, mas estava esperando o último exercicio....
     
 
 
@@ -165,7 +164,8 @@ printf("\n -=- CARTA 2 -=-\n");
 
     //COMPARAÇÃO DAS CARTAS USANDO IF ELSE, VOU TESTAR TAMBÉM FAZER UM SISTEMA DE PONTOS? TALVEZ COM INCREMENTOS, PRA DECIDIR QUAL CARTA GANHA NO FINAL.
     // os atributos que vou comparar vão ser: população, área e pontos turísticos!
-      int pontos1 = 0, pontos2 = 0;
+      int pontos1 = 0, pontos2 = 0; 
+      //criei essas variavei e atribui valor 0 a elas, para usar no incremento 
 
       printf("\n------------ COMPARAÇÃO DAS CARTAS -----------\n");
       printf("\n OS ATRIBUTOS A SEREM COMPARADOS: POPULAÇÃO, ÁREA E PONTOS TURÍSTICOS. \n");
@@ -185,7 +185,7 @@ printf("\n -=- CARTA 2 -=-\n");
 
     if (area1 > area2) {
       printf("(%f), Carta 1 ganhou!\n", area1); 
-      pontos1++;
+      pontos1++; 
     } else {
       printf("(%f), Carta 2 ganhou!\n", area2);
       pontos2++;
@@ -204,7 +204,7 @@ printf("\n -=- CARTA 2 -=-\n");
       printf("\n--PONTUAÇÃO FINAL--\n");
       printf(" \nCarta 1- (%s): acumulou %d pontos! \n", cidade1, pontos1);
       printf(" \nCarta 2- (%s): acumulou %d pontos! \n", cidade2, pontos2);
-//comparação da carta vencedora, usei tbem uma 
+//comparação da carta vencedora, usei tbem o if else aqui
       if (pontos1 > pontos2) {
         printf("\n====CARTA VENCEDORA====\n");
         printf(" \nCarta 1: %s, de código(%s), população de %lu habitantes, área de %f km² e com %d pontos turísticos! \n", cidade1, codigo1, populacao1, area1, pontosturisticos1);
@@ -213,6 +213,9 @@ printf("\n -=- CARTA 2 -=-\n");
         printf(" \nCarta 2: %s, de código (%s), população de %lu habitantes, área de %f km² e com %d pontos turísticos !\n ", cidade2, codigo2, populacao2, area2, pontosturisticos2);
       }
 
+
+
+      //aqui é como tinha feito a comparação antes, usando só operadores ralacionais
       /*printf("\n ============== COMPARAÇÃO DE CARTAS ==============\n");
       printf("\n -LEMBRETE: O = FALSO     1 = VERDADEIRO.\n");
       printf("População: A carta 1 venceu? [%d] \n", populacao1 > populacao2);
@@ -226,8 +229,7 @@ printf("\n -=- CARTA 2 -=-\n");
 
 
     //estou tendo problemas com as casas decimais dos valores grandes: como área, população e o pib
-    // acredito que existam funções e comandos para "regular" esse pontos e vírgulas, mas ainda 
-    // não foi passado na sala.
+    // acredito que existam funções e comandos para "regular" esse pontos e vírgulas, mas ainda n descobrir
   printf("\n=======FIM=======\n");
  printf("\n \n");
 
