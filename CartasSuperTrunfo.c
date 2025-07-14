@@ -59,7 +59,7 @@ printf("- INFORME O NOME DA CIDADE (SEM ESPAÇOS): \n");
 scanf("%s", cidade1);
 
 printf("- INFORME O NÚMERO DA POPULAÇÃO(SEM PONTOS OU VÍRGULAS):\n");
-scanf("%dlu", &populacao1);
+scanf("%lu", &populacao1);
 
 printf("- INFORME A ÁREA DA CIDADE (EM KM², SEM PONTOS OU VÍRGULAS):\n");
 scanf("%f", &area1);
@@ -161,6 +161,37 @@ printf("\n -=- CARTA 2 -=-\n");
     
     printf("--> PIB PER CAPITA da cidade é:  %fR$ \n",pibpercapita2);
 
+
+
+    //COMPARAÇÃO DAS CARTAS USANDO IF ELSE, VOU TESTAR TAMBÉM FAZER UM SISTEMA DE PONTOS? TALVEZ COM INCREMENTOS, PRA DECIDIR QUAL CARTA GANHA NO FINAL.
+    // os atributos que vou comparar vão ser: população, área e pontos turísticos!
+
+
+      printf("\n------------ COMPARAÇÃO DAS CARTAS -----------\n");
+      printf("\n OS ATRIBUTOS A SEREM COMPARADOS: POPULAÇÃO, ÁREA E PONTOS TURÍSTICOS. \n");
+
+
+      printf("POPULAÇÃO:  ");
+    
+    if (populacao1 > populacao2) {
+      printf("Carta 1 venceu!\n");
+    } else {
+      printf("Carta 2 venceu!\n");
+    }
+     printf("ÁREA:  ");
+
+    if (area1 > area2) {
+      printf("Carta 1 venceu!\n"); 
+    } else {
+      printf("Carta 2 venceu!\n");
+    }
+     printf("PONTOS TURÍSTICOS:  ");
+
+    if (pontosturisticos1 > pontosturisticos2) {
+      printf("Carta 1 venceu!\n");
+    } else {
+      printf("Carta 2 venceu!\n");
+    }
 
 
       /*printf("\n ============== COMPARAÇÃO DE CARTAS ==============\n");
