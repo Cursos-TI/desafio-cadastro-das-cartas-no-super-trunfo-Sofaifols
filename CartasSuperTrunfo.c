@@ -123,15 +123,15 @@ printf("\n ----- EXIBIÇÃO DOS DADOS CADASTRADOS PARA AS CARTAS -----\n");
 
     printf("--> População: %lu \n", populacao1);
 
-    printf("--> Área: %f km²\n", area1);
+    printf("--> Área: %.3f km²\n", area1);
 
-    printf("--> PIB: %f bilhões de reais\n", pib1);
+    printf("--> PIB: %.3f bilhões de reais\n", pib1);
 
     printf("--> Quantidade de pontos turísticos: %d\n", pontosturisticos1);
 
-    printf("--> A densidade demográfica dessa cidade é:  %f habitantes por km² \n", densidadepopulacional1);
+    printf("--> A densidade demográfica dessa cidade é:  %.3f habitantes por km² \n", densidadepopulacional1);
 
-    printf("--> PIB PER CAPITA da cidade é:  %f R$ \n",pibpercapita1);
+    printf("--> PIB PER CAPITA da cidade é:  %.2f R$ \n",pibpercapita1);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -150,15 +150,15 @@ printf("\n -=- CARTA 2 -=-\n");
 
     printf("--> População: %lu \n", populacao2);
 
-    printf("--> Área: %f km²\n", area2); //delimitei o tanto de casas com .2
+    printf("--> Área: %.3f km²\n", area2); //delimitei o tanto de casas com .2
 
-    printf("--> PIB: %f bilhões de reais\n", pib2); //delimitei o tanto de casas com o .2
+    printf("--> PIB: %.3f bilhões de reais\n", pib2); //delimitei o tanto de casas com o .2
 
     printf("--> Quantidade de pontos turísticos: %d \n", pontosturisticos2);
 
-    printf("--> A densidade demográfica desse estado é:  %f habitantes por km² \n", densidadepopulacional2);
+    printf("--> A densidade demográfica desse estado é:  %.3f habitantes por km² \n", densidadepopulacional2);
     
-    printf("--> PIB PER CAPITA da cidade é:  %fR$ \n",pibpercapita2);
+    printf("--> PIB PER CAPITA da cidade é:  %.3fR$ \n",pibpercapita2);
 
 
 
@@ -184,10 +184,10 @@ printf("\n -=- CARTA 2 -=-\n");
      printf("ÁREA:  ");
 
     if (area1 > area2) {
-      printf("(%f), Carta 1 ganhou!\n", area1); 
+      printf("(%.3f), Carta 1 ganhou!\n", area1); 
       pontos1++; 
     } else {
-      printf("(%f), Carta 2 ganhou!\n", area2);
+      printf("(%.3f), Carta 2 ganhou!\n", area2);
       pontos2++;
     }
      printf("PONTOS TURÍSTICOS:  ");
@@ -207,10 +207,10 @@ printf("\n -=- CARTA 2 -=-\n");
 //comparação da carta vencedora, usei tbem o if else aqui
       if (pontos1 > pontos2) {
         printf("\n====CARTA VENCEDORA====\n");
-        printf(" \nCarta 1: %s, de código(%s), população de %lu habitantes, área de %f km² e com %d pontos turísticos! \n", cidade1, codigo1, populacao1, area1, pontosturisticos1);
+        printf(" \nCarta 1: %s, de código(%s), população de %lu habitantes, área de %.3f km² e com %d pontos turísticos! \n", cidade1, codigo1, populacao1, area1, pontosturisticos1);
       } else {
         printf("\n====CARTA VENCEDORA====\n");
-        printf(" \nCarta 2: %s, de código (%s), população de %lu habitantes, área de %f km² e com %d pontos turísticos !\n ", cidade2, codigo2, populacao2, area2, pontosturisticos2);
+        printf(" \nCarta 2: %s, de código (%s), população de %lu habitantes, área de %.3f km² e com %d pontos turísticos !\n ", cidade2, codigo2, populacao2, area2, pontosturisticos2);
       }
 
 
@@ -228,8 +228,7 @@ printf("\n -=- CARTA 2 -=-\n");
       */
 
 
-    //estou tendo problemas com as casas decimais dos valores grandes: como área, população e o pib
-    // acredito que existam funções e comandos para "regular" esse pontos e vírgulas, mas ainda n descobrir
+    
   printf("\n=======FIM=======\n");
  printf("\n \n");
 
