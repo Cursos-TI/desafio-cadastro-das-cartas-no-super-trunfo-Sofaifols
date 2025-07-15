@@ -37,7 +37,7 @@ int main() {
     float superpoder2;
 
 
-    //estou pensando em economizar espaço no codigo, colocando cariaveis do mesmo tipo juntas, mas estava esperando o último exercicio....
+    //estou pensando em economizar espaço no codigo, colocando variaveis do mesmo tipo juntas, mas estava esperando o último exercicio....
     
 
 
